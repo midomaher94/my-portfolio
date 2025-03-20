@@ -1,34 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="text-content">
-            <h2>Hello, I'm Ahmed Maher</h2>
-            <p> Front End  Developer</p>
-        </div>
-        <img class="row" src="IMG-20241217-WA0004.jpg">
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
 
-    <script src="main.js"></script>
-</body>
-</html></section></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container" data-aos="fade-up">
+            <div class="text-content">
+                <h2>Hello, I'm Ahmed Maher</h2>
+                <p>Software Developer - Front End</p>
+                <div class="download-cv">
+                    <a href="Ahmed_Maher_Abdelmged_CV.pdf" download>
+                        <button class="download-btn">📄 Download CV</button>
+                    </a>
+                </div>
+            </div>
+            <img class="profile-img" src="IMG-20241217-WA0004.jpg" alt="Ahmed Maher">
+        </div>
+
+        <section id="about" data-aos="fade-up">
+            <div class="container2">
+                <h3>About Me</h3>
+                <p>I am a passionate and dedicated professional with extensive experience in web development and design.
+                    I thrive on solving challenges and creating impactful digital experiences tailored to clients.</p>
+            </div>
+        </section>
+
+<section id="projects" data-aos="fade-up">
+    <div class="container3">
+        <h3>Projects</h3>
+
+        <div class="project" data-aos="zoom-in">
+            <div class="project-gallery">
+                <img src="img project 1/Annotation 2025-03-15 221409.png" alt="Project 1">
+                <img src="img project 1/Annotation 2025-03-15 221520.png" alt="Project 1">
+                <img src="img project 1/Annotation 2025-03-15 221559.png" alt="Project 1">
+                <img src="img project 1/Annotation 2025-03-15 221648.png" alt="Project 1">
+                <img src="img project 1/Annotation 2025-03-15 221735.png" alt="Project 1">
+                <img src="img project 1/Annotation 2025-03-15 221826.png" alt="Project 1">
+            </div>
+            <h4>Project 1</h4>
+            <p>Project description goes here.</p>
+            <a href="https://midomaher94.github.io/bekery/" target="_blank" class="project-link">Open</a>
+           
+        </div>
+
+        <div class="project" data-aos="zoom-in">
+            <div class="project-gallery">
+                <img src="img project 2/1.jpg" alt="Project 2">
+                <img src="img project 2/2.jpg" alt="Project 2">
+                <img src="img project 2/3.jpg" alt="Project 2">
+                <img src="img project 2/4.jpg" alt="Project 2">
+                <img src="img project 2/5.jpg" alt="Project 2">
+            </div>
+            <h4>Project 2</h4>
+            <p>Project description goes here.</p>
+            <a href="https://midomaher94.github.io/Start/" target="_blank" class="project-link">Open</a>
+        </div>
+
+        <div class="project" data-aos="zoom-in">
+            <div class="project-gallery">
+                <img src="img project 3/Annotation 2025-03-16 222155.jpg" alt="Project 3">
+                <img src="img project 3/2.jpg" alt="Project 3">
+                <img src="img project 3/3.jpg" alt="Project 3">
+                <img src="img project 3/4.jpg" alt="Project 3">
+                <img src="img project 3/5.jpg" alt="Project 3">
+            </div>
+           
+            <h4>Project 3</h4>
+            <p>Project description goes here.</p>
+            <a href="https://midomaher94.github.io/model/" target="_blank" class="project-link">Open</a>
+        </div>
+
+    </div>
+</section>
+</section>
+
+
+        <section id="skills" data-aos="fade-up">
+            <div class="container2">
+                <h3>Skills</h3>
+                <div class="skill">
+                    <p>HTML & CSS</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>React.js</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>UI/UX Design</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" data-aos="fade-up">
+            <div class="container2">
+                <h3>Testimonials</h3>
+                <div class="testimonial">
+                    <p>"Ahmed is an exceptional developer! His work is always top-notch." - Client A</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Working with Ahmed was an amazing experience. Highly recommended!" - Client B</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <div class="container2">
+                <h3>Contact Me</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/15uCRGAZaV/" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://github.com/midomaher94" target="_blank" class="social-icon github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-maher-8a1988348/" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/qr/IBEFJF2VBA2NK1" target="_blank" class="social-icon whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/YOUR_FA_KIT.js" crossorigin="anonymous"></script>
+
+
+        <footer>
+            <p>&copy; 2025 Ahmed Maher. All rights reserved.</p>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+
+</html>

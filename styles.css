@@ -30,25 +30,42 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
-    transition: 0.3s;
+    font-size: 18px;
+    font-weight: bold;
     position: relative;
-}
-
-nav ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background: cyan;
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
     transition: 0.3s;
 }
 
-nav ul li a:hover::after {
-    width: 100%;
-    left: 0;
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, cyan, rgb(247, 8, 247));
+    z-index: -1;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: cyan;
+    transition: 0.3s;
+}
+
+nav ul li a:hover i {
+    transform: rotate(360deg);
+    color: magenta;
 }
 h1{
     font-size: 25px;
@@ -66,7 +83,7 @@ h1{
     max-width: 60%;
     margin: 30px auto;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
@@ -98,10 +115,98 @@ h1{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+.container2 {
+    
+    align-items: center;
+   
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container2 img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s;
+}
+.container2 img:hover {
+    transform: scale(1.1);
+}
+.container2 h3 {
+    font-size: 30px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container2 p{
+    font-size: 15px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container3 img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s;
+}
+.container3 img:hover {
+    transform: scale(1.1);
+}
+.container3 h3 {
+    font-size: 20px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container3 p {
+    font-size: 15px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.row {
+         
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 3px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-top: 2px solid rgba(255, 255, 255, 0.2);
@@ -117,4 +222,304 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+
+}
+.text-content {
+    max-width: 400px;
+    text-align: left;
+}
+
+.download-cv {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+    transform: scale(0.98);
+}
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-btn:hover img {
+    transform: scale(1.1);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+    transition: 0.3s;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Colors for each social icon */
+.facebook:hover {
+    background: #1877F2;
+}
+
+.github:hover {
+    background: #333;
+}
+
+.linkedin:hover {
+    background: #0A66C2;
+}
+
+.whatsapp:hover {
+    background: #25D366;
+}
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container2 {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container2 h3 {
+    font-size: 24px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, cyan, magenta);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.8);
+}
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container3 {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container3 h3 {
+    font-size: 24px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container3 {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container3 h3 {
+    font-size: 24px;
+    background: linear-gradient(45deg, cyan, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: cyan;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+}
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
